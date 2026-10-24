@@ -33,6 +33,8 @@ then open http://localhost:8000.
 - Update "Last updated" on `/privacy/` whenever the policy changes.
 - The game repo's `PRIVACY_EU.md` is the source of truth for what the game collects. Change the policy when it
   changes (new service, analytics event or stored field).
+- The policy says Supabase keeps server logs for 1 day (Free plan). Moving to Pro makes it 7 days: update
+  "How long we keep it" when the plan changes.
 - If Cloudflare's proxy (orange cloud) is ever turned on, Cloudflare starts seeing site traffic: add that to the
   "This website" section first.
 
