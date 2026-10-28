@@ -25,14 +25,15 @@
 	<div class="wrap">
 		<h1>Privacy Policy</h1>
 		<p class="meta">For the game <strong>Lumber Man</strong> and the website www.gallantoath.com.<br>
-			Last updated: 24 October 2026</p>
+			Last updated: 28 October 2026</p>
 
 		<div class="card">
 			<h2>The short version</h2>
 			<ul>
-				<li>You never create a username or password. The game makes an <strong>anonymous account</strong> so your
-					progress is backed up and you can appear on leaderboards.</li>
-				<li>Your leaderboard name, rank and scores are visible to other players.</li>
+				<li>You never create a username or password. On Android the game signs you in with <strong>Google Play
+					Games</strong>, so your progress follows you to a new phone. Without Play Games it makes an
+					<strong>anonymous account</strong> instead.</li>
+				<li>Your leaderboard name (your Play Games name), rank and scores are visible to other players.</li>
 				<li>The game can send <strong>gameplay statistics</strong> to help us improve it. In the EU, EEA and UK we ask
 					first. Everywhere, you can turn it off in <strong>Settings → Online &amp; privacy</strong>.</li>
 				<li>Optional rewarded ads come from <strong>Google AdMob</strong>. Where the law requires it, Google asks for
@@ -57,16 +58,21 @@
 			your devices last saved your progress. None of this leaves your phone except as described below.</p>
 
 		<h3>Your online account (Supabase)</h3>
-		<p>When the game connects, it creates an anonymous account identified by a random ID, with no name, email or
-			password. We store with it:</p>
+		<p>When the game connects, it uses an online account identified by a random ID, with no password. If you sign in
+			with Google Play Games (see below), the account is linked to your Play Games player ID, so reinstalling the game
+			or moving to a new phone finds the same account. Otherwise the account is anonymous and belongs to that one
+			install. We store with it:</p>
 		<ul>
 			<li><strong>Your cloud save:</strong> your game progress (tiers, upgrades, items, achievements and similar game
 				data), so it's backed up.</li>
 			<li><strong>Your leaderboard entries:</strong> your scores on each leaderboard, when you set them and the tier
 				you were on.</li>
-			<li><strong>Your public leaderboard profile:</strong> a display name made from "Lumberjack" and a short code
-				(you can't set your own name yet), your in-game rank title, number of prestiges, best tier, number of helper
-				cabins and the items you have equipped.</li>
+			<li><strong>Your public leaderboard profile:</strong> your display name, which is your Google Play Games name
+				if you signed in with Play Games and otherwise "Lumberjack" and a short code (you can't type a name
+				yourself), your in-game rank title, number of prestiges, best tier, number of helper cabins and the items
+				you have equipped.</li>
+			<li><strong>Your Play Games player ID,</strong> if you signed in with Play Games, and a made-up sign-in address
+				our server creates for the account. It is not your email address and is never sent any mail.</li>
 		</ul>
 		<p>Like any server, Supabase's servers see your device's IP address when the game connects, and keep it in
 			short-lived server logs (see <a href="#retention">How long we keep it</a>).</p>
@@ -108,6 +114,18 @@
 			apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy
 			Policy</a>.</p>
 
+		<h3>Google Play Games sign-in</h3>
+		<p>On Android, Lumber Man signs you in with Google Play Games, usually without you having to do anything. When it
+			does, Google gives our server your <strong>Play Games player ID</strong> and your <strong>Play Games
+			name</strong> (your gamer name). We don't receive your email address or anything else from your Google
+			Account. You can sign in later from Settings → Online &amp; privacy, or play without it.</p>
+		<p>Your Play Games name is shown on our leaderboards. To change it, change it in the Play Games app; the game
+			picks up the new name within about a week. Deleting your online account removes the link,
+			the name and everything else we hold for it.</p>
+		<p><em>Why:</em> so your progress and leaderboard entries belong to you rather than to one phone, and so
+			leaderboard names come from Play Games instead of being typed in. Google runs Play Games under the
+			<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
 		<h3>Google Play</h3>
 		<p>You download Lumber Man from Google Play, which Google runs under its own privacy policy. Google gives us
 			statistics about installs and app performance, including crash and error reports, which are generally
@@ -131,7 +149,7 @@
 			<table>
 				<thead><tr><th>What</th><th>Legal basis</th></tr></thead>
 				<tbody>
-					<tr><td>Online account, cloud save, leaderboards</td><td>Providing the game you asked to use (contract)</td></tr>
+					<tr><td>Online account, Play Games sign-in, cloud save, leaderboards</td><td>Providing the game you asked to use (contract)</td></tr>
 					<tr><td>Checking scores for cheating, keeping the service secure</td><td>Our legitimate interest in a fair, working game</td></tr>
 					<tr><td>Gameplay statistics</td><td>Your consent, which you can withdraw at any time</td></tr>
 					<tr><td>Ads using your information (including personalised ads)</td><td>Your consent, collected by Google's consent form</td></tr>
@@ -152,6 +170,7 @@
 					<tr><td>PostHog</td><td>Gameplay statistics (when allowed)</td><td>United States</td></tr>
 					<tr><td>Google (AdMob)</td><td>Rewarded ads</td><td>Google's global infrastructure</td></tr>
 					<tr><td>Google Play</td><td>Distributing the game, install and crash statistics</td><td>Google's global infrastructure</td></tr>
+					<tr><td>Google Play Games</td><td>Signing in on Android (player ID and Play Games name)</td><td>Google's global infrastructure</td></tr>
 					<tr><td>GitHub</td><td>Hosting this website; nightly backups of the game database</td><td>United States</td></tr>
 					<tr><td>Cloudflare</td><td>Domain name service and email forwarding</td><td>Global</td></tr>
 				</tbody>
